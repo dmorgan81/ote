@@ -46,6 +46,12 @@ static FPoint fpoint_on_rect(const GRect r, const int angle) {
 static void tick_handler(struct tm *tick_time, TimeUnits units_changed) {
     memcpy(&s_tick_time, tick_time, sizeof(struct tm));
     if (s_tick_time.tm_hour != 12) s_tick_time.tm_hour %= 12;
+#ifdef DEMO
+    s_tick_time.tm_hour = 3;
+    s_tick_time.tm_min = 0;
+    s_tick_time.tm_sec = 35;
+    s_tick_time.tm_mday = 22;
+#endif
     layer_mark_dirty(s_hands_layer);
 }
 
