@@ -14,6 +14,11 @@
                 "label": "Hour Hand Color",
                 "defaultValue": "FF0000",
                 "sunlight": false,
+                "layout": [
+                    [ "55FF00", "FFFF00", "FF5500" ],
+                    [ "00AAFF", "FF0000", "FF00AA" ],
+                    [ "AAAAAA", "FFFFFF", "#AA55FF" ]
+                ],
                 "capabilities": [ "COLOR" ]
             },
             {
