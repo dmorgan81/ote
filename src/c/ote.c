@@ -21,6 +21,8 @@ static EventHandle s_connection_event_handle;
 static bool s_connected;
 
 #ifdef PBL_RECT
+// Taken from https://github.com/NiVZ78/Edge_Ticks
+// Determines a point on the edge of a rectangular screen for the given angle.
 static int32_t abs32(const int32_t a) {
     return (a^(a>>31)) - (a>>31);
 }
